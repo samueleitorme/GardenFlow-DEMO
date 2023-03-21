@@ -1,0 +1,96 @@
+/* Light-green Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #7cb342;
+  --primary-hover: #689f38;
+  --primary-focus: rgba(124, 179, 66, 0.125);
+  --primary-inverse: #FFF;
+}
+
+/* Light-green Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --primary: #7cb342;
+    --primary-hover: #8bc34a;
+    --primary-focus: rgba(124, 179, 66, 0.25);
+    --primary-inverse: #FFF;
+  }
+}
+
+/* Light-green Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #7cb342;
+  --primary-hover: #8bc34a;
+  --primary-focus: rgba(124, 179, 66, 0.25);
+  --primary-inverse: #FFF;
+}
+
+/* Light-green (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}
+
+
+/* Estilo planes */
+#precios h4 {
+  text-align: center;
+}
+
+#precios article {
+  transition: all 300ms ease;
+  z-index: 50;
+  transition: all .3s ease;
+}
+#precios article:hover{
+  transform: scale(120%);
+  z-index: 99;
+}
+
+#precio_premium{
+  position:relative;
+  translate: 0 -50px;
+}
+
+/* FOOTER */
+
+footer h6{
+  border-bottom: 1px solid #000;
+  
+}
+
+footer>p {
+  text-align: center;
+}
+
+/* Estilo formulario */
+
+input:invalid {
+  font-weight: bold;
+  color: #f55;
+}
+
+
+
+@media screen and (max-width:700px) {
+  nav {
+    flex-direction: column;
+  }
+
+  #brand {
+    justify-content: center;
+  }
+
+  #links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #links li{
+    margin: 0 .5em;
+  }
+}
