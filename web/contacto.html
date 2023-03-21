@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GardenFlow - El software del jardinero feliz</title>
+    <!-- Pico CSS -->
+    <link rel="stylesheet" href="css/pico.min.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <main class="container">
+        <nav>
+            <ul id="brand">
+                <img src="../img/logo.png" alt="" width="48px">
+                <li><strong><a href="#">GardenFlow</a></strong></li>
+            </ul>
+            <ul id="links">
+                <li><a href=".">Inicio</a></li>
+                <li role="list"><a href="#features">Caracteristicas</a>
+                    <ul>
+                        <li><a href="#">Accesiblidad</a></li>
+                        <li><a href="#">Notificaciones</a></li>
+                        <li><a href="#">Ahorro de agua</a></li>
+                    </ul>
+                </li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="download.html" role="button">Descargar</a></li>
+            </ul>
+            <ul>
+                <li><i class="bi bi-sun-fill"></i></li>
+                <li>
+                    <input type="checkbox" id="toogle-theme" name="switch" role="switch" onclick="toggleTheme()">
+                </li>
+                <li><i class="bi bi-moon-fill"></i></li>
+            </ul>
+        </nav>
+        </nav>
+        <section>
+            <h1>Contacto</h1>
+        </section>
+
+
+        <!-- Inicio formulario -->
+        <form action="">
+            <!-- NOMBRE Y APELLIDOS -->
+            <div class="grid">
+                <label for="">Nombre
+                    <input type="text">
+                </label>
+                <label for="">Apellidos
+                    <input type="text">
+                </label>
+            </div>
+            <!-- TEL, USUARIO, EMAIL -->
+            <div class="grid">
+                <label for="">Telefono
+                    <input type="tel" name="tel" id="tel">
+                </label>
+                <label for="">Usuario
+                    <input type="text">
+                </label>
+                <label for="">Email
+                    <input type="email">
+                </label>
+            </div>
+            <!-- BUSCAR Y SELECT -->
+            <div class="grid">
+                <input type="search" name="search" id="search" placeholder="Buscar">
+                <select name="permisos" id="permisos">
+                    <option value="1" disabled selected>Elegir permisos</option>
+                    <option value="2">Administrador</option>
+                    <option value="3">Usuario</option>
+                    <option value="4">Invitado</option>
+                </select>
+            </div>
+            <!-- RADIO, CHECKBOX Y SWITCH -->
+            <div class="grid">
+
+                <fieldset>
+                    <legend>Tamaño</legend>
+                    <label for="small">
+                        <input type="radio" id="small" name="size" value="small">
+                        Pequeño
+                    </label>
+                    <label for="medium">
+                        <input type="radio" id="medium" name="size" value="medium">
+                        Mediano
+                    </label>
+                    <label for="large">
+                        <input type="radio" id="large" name="size" value="large">
+                        Grande
+                    </label>
+                    <label for="extralarge">
+                        <input type="radio" id="extralarge" name="size" value="extralarge">
+                        Extra grande
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms">
+                        Acepto lo términos y condiciones
+                    </label>
+                    <label for="terms_sharing">
+                        <input type="checkbox" id="terms_sharing" name="terms_sharing"  checked>
+                        Estoy de acuerdo en compartir mi informacion con socios
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="switch">
+                        <input type="checkbox" id="switch" name="switch" role="switch">
+                        Publicar en mi perfil
+                    </label>
+                    <label for="switch_disabled">
+                        <input type="checkbox" id="switch_disabled" name="switch_disabled" role="switch_disabled"
+                            checked>
+                        El usuario debe cambiar la contraseña en el proximo inicio de sesión
+                    </label>
+                </fieldset>
+
+            </div>
+            <!-- LIMPIAR Y ENVIAR -->
+            <div class="grid">
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+
+
+</body>
+
+</html>
