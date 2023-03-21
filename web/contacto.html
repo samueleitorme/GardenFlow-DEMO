@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="css/myStyle.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
+    <!-- Script gracias a chatGPT -->
+    <script>
+        function toggleTheme() {
+            const theme = document.documentElement.getAttribute('data-theme');
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -110,7 +120,7 @@
                         Acepto lo términos y condiciones
                     </label>
                     <label for="terms_sharing">
-                        <input type="checkbox" id="terms_sharing" name="terms_sharing"  checked>
+                        <input type="checkbox" id="terms_sharing" name="terms_sharing" checked>
                         Estoy de acuerdo en compartir mi informacion con socios
                     </label>
                 </fieldset>

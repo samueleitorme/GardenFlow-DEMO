@@ -4,4 +4,6 @@ He realizado la web con una temática. Un software de control y monitorización 
 
 ## GardenFlow
 
-> ### [Enlace a la web](samueleitorme.github.io/repositorio3/web/)
+### [📎Enlace a la web](samueleitorme.github.io/repositorio3/web/)
+
+**Nota:** El formulario se encuentra en la pagina de contacto.
