@@ -1,9 +1,6 @@
-# Web con picocss
+# GARDENFLOW - DEMO
 
-He realizado la web con una temática. Un software de control y monitorización del jardín de casa.
+Ejemplo de web realizada con PicoCSS, un framework minimslista.
+[PicoCSS](https://picocss.com/)
 
-## GardenFlow
-
-### [📎Enlace a la web](https://samueleitorme.github.io/Repositorio3/web)
-
-> El formulario se encuentra en la pagina de contacto.‼
+## [🌱 Enlace a la web](https://samueleitorme.github.io/GardenFlow-DEMO/web)
